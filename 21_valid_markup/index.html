@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html lang="ru">
 
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
@@ -10,14 +11,13 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <meta charset="utf-8">
 </head>
 
 <body>
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
+    <nav class="sidebar-wrapper">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
@@ -189,13 +189,13 @@
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
+        $(".sidebar-wrapper").toggleClass("active");
     });
 
     // Opens the sidebar menu
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
+        $(".sidebar-wrapper").toggleClass("active");
     });
 
     // Scrolls to the selected menu item on the page

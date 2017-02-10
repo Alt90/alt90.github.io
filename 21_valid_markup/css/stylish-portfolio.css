@@ -58,7 +58,7 @@ hr.small {
 
 /* Side Menu */
 
-#sidebar-wrapper {
+.sidebar-wrapper {
     z-index: 1000;
     position: fixed;
     right: 0;
